@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Premium Smart Watches" />
+
+    <title>Wave - Wear the World</title>
+    <link rel="icon" href="images/favicon-lg.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon-md.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon-lg.png" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav collapsible">
+        <a aria-label="wave" class="nav__brand" href="/"
+          ><img src="images/logo.png" alt=""
+        /></a>
+        <svg class="icon icon--white nav__toggler">
+          <use href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item">
+            <a href="#">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#3d">3D</a>
+          </li>
+          <li class="nav__item">
+            <a href="#product">Product</a>
+          </li>
+          <li class="nav__item">
+            <a href="#specification">Specification</a>
+          </li>
+          <li class="nav__item">
+            <a href="#features">Features</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="block block--dark hero" id="hero">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">Introducing Wave</h1>
+          <p class="hero__tagline">Smarter Way to Elevate Every Look.</p>
+          <a target="_blank" href="#" class="btn btn--accent btn--stretched"
+            >Get Started</a
+          >
+        </header>
+        <picture data-aos="zoom-in" data-aos-duration="1000">
+          <source
+            type="image/webp"
+            srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
+          />
+          <source
+            type="image/png"
+            srcset="images/banner.png 1x, images/banner@2x.png 2x"
+          />
+          <img class="hero__image" src="images/banner.png" alt="" />
+        </picture>
+      </div>
+    </section>
+    <section class="block block--dark block--skewed-left" id="3d">
+      <div class="block__header canvas__header">
+        <h2 class="block__heading">Explore Wave in 3D</h2>
+      </div>
+      <div class="container">
+        <div id="canvas" class="canvas">
+          <canvas class="webgl" width="570px" height="570px" id="objs"></canvas>
+          <button class="btn btn--primary btn--stretched" id="fullscreen">
+            <svg class="icon icon--white">
+              <use href="images/sprite.svg#fullscreen"></use>
+            </svg>
+            fullscreen
+          </button>
+        </div>
+      </div>
+    </section>
+    <section
+      data-aos="fade-up"
+      class="block container block-plans"
+      id="product"
+    >
+      <header data-aos="zoom-in-up" class="block__header">
+        <h2>Choose Your Wave</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+          exercitationem?
+        </p>
+      </header>
+      <div class="grid grid--1x3 container">
+        <div class="product">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <picture class="product__image">
+                <source
+                  type="image/webp"
+                  srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
+                />
+                <source
+                  type="image/png"
+                  srcset="images/banner.png 1x, images/banner@2x.png 2x"
+                />
+
+                <img src="images/banner.png" alt="" />
+              </picture>
+            </header>
+            <div class="card__body">
+              <div class="product__content">
+                <h3 class="product__heading">Wave Basic</h3>
+                <div class="product__price">
+                  <span>$50 </span>
+                  <span class="product__price-old">$40</span>
+                </div>
+              </div>
+              <button class="btn btn--secondary btn--block">Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <picture class="product__image">
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/products/watch1.webp    1x,
+                    images/products/watch1@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/png"
+                  srcset="
+                    images/product/watch1.png     1x,
+                    images/products/watch1@2x.png 2x
+                  "
+                />
+
+                <img src="images/banner.png" alt="" />
+              </picture>
+            </header>
+            <div class="card__body">
+              <div class="product__content">
+                <h3 class="product__heading">Wave Z</h3>
+                <div class="product__price">
+                  <span>$50 </span>
+                  <span class="product__price-old">$40</span>
+                </div>
+              </div>
+              <button class="btn btn--secondary btn--block">Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <picture class="product__image">
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/products/watch2.webp    1x,
+                    images/products/watch2@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/png"
+                  srcset="
+                    images/product/watch2.png     1x,
+                    images/products/watch2@2x.png 2x
+                  "
+                />
+
+                <img src="images/products/watch2.png" alt="" />
+              </picture>
+            </header>
+            <div class="card__body">
+              <div class="product__content">
+                <h3 class="product__heading">Wave Z Pro</h3>
+                <div class="product__price">
+                  <span>$50 </span>
+                  <span class="product__price-old">$40</span>
+                </div>
+              </div>
+              <button class="btn btn--secondary btn--block">Buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="block block--dark block--skewed-left specification"
+      id="specification"
+    >
+      <header class="block__header" data-aos="zoom-in">
+        <h2>Specification</h2>
+      </header>
+      <div class="grid grid--1x3 container">
+        <ul data-aos="fade-up" class="list specification__content">
+          <li>
+            <svg class="icon icon--primary">
+              <use href="images/new_sprite.svg#heartrate"></use>
+            </svg>
+          </li>
+          <li>Vital Monitor App</li>
+        </ul>
+        <ul
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="list specification__content"
+        >
+          <li>
+            <svg class="icon icon--primary">
+              <use href="images/new_sprite.svg#water"></use>
+            </svg>
+          </li>
+          <li>Water resistant</li>
+        </ul>
+        <ul
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="list specification__content"
+        >
+          <li>
+            <svg class="icon icon--primary">
+              <use href="images/new_sprite.svg#battery"></use>
+            </svg>
+          </li>
+          <li>Up to 18 hours</li>
+        </ul>
+        <ul
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="list specification__content"
+        >
+          <li>
+            <svg class="icon icon--primary">
+              <use href="images/new_sprite.svg#gps"></use>
+            </svg>
+          </li>
+          <li>Available cellular connectivity</li>
+        </ul>
+        <ul
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="list specification__content"
+        >
+          <li>
+            <svg class="icon icon--primary">
+              <use href="images/new_sprite.svg#wear"></use>
+            </svg>
+          </li>
+          <li>45 mm stainless steel case</li>
+        </ul>
+        <ul
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="list specification__content"
+        >
+          <li>
+            <svg class="icon icon--primary">
+              <use href="images/new_sprite.svg#relax"></use>
+            </svg>
+          </li>
+          <li>Carbon-neutral combinations available</li>
+        </ul>
+      </div>
+    </section>
+    <section class="block container" id="features">
+      <header class="block__header">
+        <h2>Quick Product Highlights</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed,
+          voluptatem.
+        </p>
+      </header>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="zoom-in-up">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use href="images/sprite.svg#easy"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Super Easy to Use</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
+          </p>
+          <a href="#" target="_blank" class="link-arrow">Learn More</a>
+        </div>
+        <picture data-aos="zoom-in-up">
+          <source
+            type="image/webp"
+            srcset="images/wear.webp 1x, images/wear@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/wear.jpg 1x, images/wear@2x.jpg 2x"
+          />
+          <img class="feature__image" src="images/wear@2x.jpg" alt="" />
+        </picture>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="fade-up">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use href="images/new_sprite.svg#relax"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Easy Health Stats</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
+          </p>
+          <a href="#" target="_blank" class="link-arrow">Learn More</a>
+        </div>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/stats.webp 1x, images/stats@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/stats.jpg 1x, images/stats@2x.jpg 2x"
+          />
+          <img class="feature__image" src="images/stats@2x.jpg" alt="" />
+        </picture>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="fade-up">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use href="images/sprite.svg#snap"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Full-Touch 2.5D Curved Display</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
+          </p>
+          <a href="#" target="_blank" class="link-arrow">Learn More</a>
+        </div>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/compact.webp 1x, images/compact@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/compact.jpg 1x, images/compact@2x.jpg 2x"
+          />
+          <img class="feature__image" src="images/compact@2x.jpg" alt="" />
+        </picture>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="fade-up">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use href="images/new_sprite.svg#heartrate"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Keep Track Of Your SpO2 Level</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
+          </p>
+          <a href="#" target="_blank" class="link-arrow">Learn More</a>
+        </div>
+        <picture data-aos="zoom-in-up">
+          <source
+            type="image/webp"
+            srcset="images/watchblue.webp 1x, images/watchblue@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/watchblue.jpg 1x, images/watchblue@2x.jpg 2x"
+          />
+          <img class="feature__image" src="images/watchblue@2x.jpg" alt="" />
+        </picture>
+      </article>
+    </section>
+    <section class="block block--dark block--skewed-right block-showcase">
+      <header class="block__header">
+        <h2>Best Fitness Tracker Smartwatch for Everyone</h2>
+      </header>
+      <div class="container grid grid--1x2">
+        <picture data-aos="fade-right" class="block-showcase__image">
+          <source
+            type="image/webp"
+            srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
+          />
+          <source
+            type="image/png"
+            srcset="images/banner.png 1x, images/banner@2x.png 2x"
+          />
+          <img src="images/banner.png" alt="" />
+        </picture>
+
+        <ul class="list">
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use href="images/new_sprite.svg#gym"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Upgrade Your Well-Being</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veniam quisquam, ex nostrum vero voluptates dicta excepturi
+                  vel perspiciatis consequuntur ab.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use href="images/new_sprite.svg#vital"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Level Up Your Wellness Game</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veniam quisquam, ex nostrum vero voluptates dicta excepturi
+                  vel perspiciatis consequuntur ab.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use href="images/new_sprite.svg#alarm"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">
+                  Daily activity tracker and remainder
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veniam quisquam, ex nostrum vero voluptates dicta excepturi
+                  vel perspiciatis consequuntur ab.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="block" data-aos="zoom-in">
+      <header class="block__header">
+        <h2>What our Customers are Saying</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, ipsam.
+        </p>
+      </header>
+      <div class="container">
+        <div class="card testimonial">
+          <div class="grid grid--1x2">
+            <div class="testimonial__image">
+              <img
+                src="images/testimonial.jpg"
+                alt="A happy, smiling customer"
+              />
+              <span class="icon-container icon-container--accent">
+                <svg class="icon icon--white icon--small">
+                  <use href="images/sprite.svg#quotes"></use>
+                </svg>
+              </span>
+            </div>
+            <blockquote class="quote">
+              <p class="quote__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt optio officiis dolore earum error eaque perferendis
+                laudantium sed praesentium dolorum.
+              </p>
+              <footer>
+                <div class="media">
+                  <div class="media__image">
+                    <svg class="icon icon--primary quote__line">
+                      <use href="images/sprite.svg#line"></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title quote__author">John Smith</h3>
+                    <p class="quote__organization">ABC Company</p>
+                  </div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="callout callout--primary callout-signup">
+        <div class="grid grid--1x2">
+          <div class="callout__content">
+            <h2 class="callout__heading">Subscribe to Our Newsletter</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+              voluptate tempora qui distinctio consequatur aliquid pariatur
+              cupiditate quas cum fugit.
+            </p>
+          </div>
+          <button id="subscribe" class="btn btn--secondary btn--stretched">
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="block block--dark footer">
+      <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Products</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Smart Watch</a></li>
+              <li><a href="#">Laptop</a></li>
+              <li><a href="#">Mobile</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Company</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Affiliates</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Support</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Store</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Find a Store</a></li>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">Shopping Help</a></li>
+            </ul>
+          </div>
+        </section>
+        <div class="footer__brand">
+          <img src="images/logo.png" alt="" />
+          <p class="footer__copyright">Copyright &copy; 2023 Chatrapathi</p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
