@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
-import Watch from "./images/watch.glb";
+import Watch from "./images/watch2.glb";
 
 /**
  * Base
@@ -108,7 +108,7 @@ scene.add(camera);
 const controls = new OrbitControls(camera, canvas);
 controls.enableDamping = true;
 controls.enablePan = false;
-controls.enableZoom = false;
+// controls.enableZoom = false;
 
 /**
  * Renderer
