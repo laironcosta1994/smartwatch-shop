@@ -1,3 +1,2 @@
 # WAVE
-smart watch landing page using HTML, CSS
-"# WAVE-THREE.JS" 
+smart watch landing page using THREE.JS
